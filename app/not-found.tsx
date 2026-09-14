@@ -3,7 +3,7 @@ import { SiteHeader } from './components';
 import { sitePath } from './site-config';
 
 export const metadata: Metadata = {
-  title: 'Page not found — STEMReader',
+  title: 'Page not found | STEMReader',
   robots: { index: false, follow: false },
 };
 

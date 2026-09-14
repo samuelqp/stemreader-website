@@ -1,57 +1,19 @@
-# STEMReader website
+# STEMReader
 
-Production marketing site for [STEMReader](https://stemreader.app), a native Apple-platform app that turns STEM textbook PDFs into interactive study workspaces.
+STEMReader helps you turn textbook PDFs into an interactive study workspace on iPad. Browse chapters and exercises, preview references without losing your place, and work through problems with Apple Pencil.
 
-The site is fully static, has no server runtime, no client-side JavaScript, no account flow, no analytics, no trackers, no API calls, and no app credentials. The production build is written to `out/` and can be uploaded to any static host.
+![STEMReader displaying an equation in a floating reference preview](public/screenshots/equation-reference-preview.PNG)
 
-## Local development
+## What you can do
 
-Requirements: Node.js 22.13 or newer and npm.
+- **Find your way through a textbook.** A BookMap organizes chapters, pages, exercises, figures, and references.
+- **Keep reading while you explore.** Open equations, figures, and tables in floating previews.
+- **Work through problems.** Keep the exercise in view while you write your solution.
+- **Add notes to the page.** Attach handwritten notes to the part of a PDF they explain.
+- **Organize your library.** Group your PDFs into collections and pick up where you left off.
 
-```bash
-npm install
-npm run dev
-```
+Your original PDFs stay on your device. Reading is free, and your first cloud-scanned textbook is free for up to 1,000 pages. You can also choose free on-device scanning.
 
-Open the local URL printed by the development server.
+STEMReader is coming soon to the App Store. Visit [stemreader.app](https://stemreader.app) to explore the app, read the [privacy overview](https://stemreader.app/privacy/), or find [support](https://stemreader.app/support/). For help, email [stemreader@outlook.com](mailto:stemreader@outlook.com).
 
-## Production build
-
-```bash
-npm run lint
-npm run build
-```
-
-Upload the contents of `out/` to the static host. To test that exact output locally:
-
-```bash
-npm run preview
-```
-
-## Owner configuration
-
-All public product and deployment values are centralized in [`app/site-config.ts`](./app/site-config.ts):
-
-- `siteUrl`: canonical production URL.
-- `appStoreUrl`: currently `null`. Replace it with the verified App Store URL to convert every availability state into a download link.
-- `availabilityLabel`: text shown while no App Store URL is configured.
-- `supportEmail`: currently `null`. Add a verified public address to enable the shared contact links.
-- `copyrightOwner` and `copyrightYear`.
-- `socialLinks`: intentionally empty until official profiles are supplied.
-
-The public `CNAME` file contains `stemreader.app`. Remove that file when deploying to a host where a GitHub Pages custom-domain file is not appropriate.
-
-See [`DEPLOYMENT.md`](./DEPLOYMENT.md) for GitHub Pages, Namecheap DNS, HTTPS, custom-domain, and alternate-host instructions.
-
-## Structure
-
-- `app/page.tsx` — landing page and synthetic product compositions.
-- `app/privacy/page.tsx` — web-facing privacy overview.
-- `app/support/page.tsx` — support and troubleshooting.
-- `app/not-found.tsx` — branded static 404 page.
-- `app/components.tsx` — shared navigation, footer, availability CTA, and support contact.
-- `app/globals.css` — design tokens, responsive layout, light/dark themes, and reduced-motion behavior.
-- `scripts/prune-static.mjs` — removes the unused framework hydration payload from the generated HTML and static output.
-- `public/` — optimized brand art, social card, favicons, manifest, sitemap, robots file, and host files.
-
-The product compositions use synthetic textbook content and are marketing illustrations, not screenshots.
+This repository contains the public STEMReader website. The images shown here are screenshots from the app.

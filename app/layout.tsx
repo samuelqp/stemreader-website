@@ -5,7 +5,7 @@ import { assetPath, siteConfig } from './site-config';
 export const metadata: Metadata = {
   applicationName: siteConfig.name,
   metadataBase: new URL(siteConfig.siteUrl),
-  title: 'STEMReader — Turn STEM PDFs into an interactive study workspace',
+  title: 'STEMReader | Interactive STEM textbook reading',
   description:
     'Navigate references, generate textbook structure, solve detected problems with Apple Pencil, and attach handwritten notes to STEM PDFs.',
   alternates: { canonical: '/' },
@@ -21,14 +21,14 @@ export const metadata: Metadata = {
     type: 'website',
     url: '/',
     siteName: siteConfig.name,
-    title: 'STEMReader — Turn STEM PDFs into an interactive study workspace',
+    title: 'STEMReader | Interactive STEM textbook reading',
     description:
       'Navigate references, generate textbook structure, solve detected problems with Apple Pencil, and attach handwritten notes to STEM PDFs.',
     images: [{ url: assetPath('/og.png'), width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'STEMReader — Turn STEM PDFs into an interactive study workspace',
+    title: 'STEMReader | Interactive STEM textbook reading',
     description:
       'Navigate references, generate textbook structure, solve detected problems with Apple Pencil, and attach handwritten notes to STEM PDFs.',
     images: [assetPath('/og.png')],
@@ -38,11 +38,8 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#F5F7FC' },
-    { media: '(prefers-color-scheme: dark)', color: '#111318' },
-  ],
-  colorScheme: 'light dark',
+  themeColor: '#111318',
+  colorScheme: 'dark',
 };
 
 const structuredData = {
