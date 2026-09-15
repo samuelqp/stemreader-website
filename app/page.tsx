@@ -131,8 +131,8 @@ export default function Home() {
           <div className="section-heading centered"><p className="eyebrow">Read freely. Scan when it helps.</p><h2 id="plans-title">Start with a full textbook.</h2><p>Choose how you want to create a BookMap.</p></div>
           <div className="plans-grid">
             <article className="plan-card featured"><span className="plan-label">FIRST CLOUD SCAN</span><h3>Your first textbook scan is free for up to 1,000 pages.</h3><p>Create a BookMap for your first textbook at no cost.</p><ul><li>Secure, page-by-page scanning</li><li>Resume an interrupted scan</li><li>A complete BookMap for one document</li></ul></article>
-            <article className="plan-card"><span className="plan-label">AFTER YOUR FIRST SCAN</span><h3>Credits or STEMReader Plus</h3><p>For more cloud scans, choose document credits or a STEMReader Plus subscription.</p><small>See pricing in the app when available.</small></article>
-            <article className="plan-card"><span className="plan-label">ALWAYS FREE</span><h3>Legacy Apple OCR</h3><p>Choose on-device scanning when you want to create a BookMap without cloud processing. It is always free.</p><small>Reading your imported PDFs also remains free.</small></article>
+            <article className="plan-card"><span className="plan-label">AFTER YOUR FIRST SCAN</span><h3>Credits or STEMReader Plus</h3><p>For more cloud scans, choose document credits or a STEMReader Plus subscription.</p><small>See current pricing in the app.</small></article>
+            <article className="plan-card"><span className="plan-label">ALWAYS FREE</span><h3>On-device scanning</h3><p>Create a BookMap without cloud processing. On-device scanning is always free.</p><small>Reading your imported PDFs also remains free.</small></article>
           </div>
         </section>
 
