@@ -13,14 +13,10 @@ export function Brand({ home = false }: { home?: boolean }) {
 }
 
 export function AvailabilityButton({ compact = false }: { compact?: boolean }) {
-  return siteConfig.appStoreUrl ? (
+  return (
     <a className={`button button-primary${compact ? ' compact' : ''}`} href={siteConfig.appStoreUrl} rel="noreferrer">
       Download on the App Store
     </a>
-  ) : (
-    <span className={`button button-primary button-disabled${compact ? ' compact' : ''}`} aria-label={siteConfig.availabilityLabel}>
-      <span className="status-dot" aria-hidden="true" /> {siteConfig.availabilityLabel}
-    </span>
   );
 }
 

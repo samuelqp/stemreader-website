@@ -1,8 +1,7 @@
 export const siteConfig = {
   name: 'STEMReader',
   siteUrl: 'https://stemreader.app',
-  appStoreUrl: null as string | null,
-  availabilityLabel: 'Coming soon to the App Store',
+  appStoreUrl: 'https://apps.apple.com/us/app/stemreader/id6778995923',
   supportEmail: 'stemreader@outlook.com',
   copyrightOwner: 'Samuel Quinteiro Perez',
   copyrightYear: 2026,

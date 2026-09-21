@@ -14,6 +14,6 @@ STEMReader helps you turn textbook PDFs into an interactive study workspace on i
 
 Your original PDFs stay on your device. Reading is free, and your first cloud-scanned textbook is free for up to 1,000 pages. You can also choose free on-device scanning.
 
-STEMReader is coming soon to the App Store. Visit [stemreader.app](https://stemreader.app) to explore the app, read the [privacy overview](https://stemreader.app/privacy/), or find [support](https://stemreader.app/support/). For help, email [stemreader@outlook.com](mailto:stemreader@outlook.com).
+[Download STEMReader on the App Store](https://apps.apple.com/us/app/stemreader/id6778995923), visit [stemreader.app](https://stemreader.app) to explore the app, read the [privacy overview](https://stemreader.app/privacy/), or find [support](https://stemreader.app/support/). For help, email [stemreader@outlook.com](mailto:stemreader@outlook.com).
 
 This repository contains the public STEMReader website. The images shown here are screenshots from the app.
